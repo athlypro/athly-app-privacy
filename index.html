@@ -6,20 +6,22 @@
 <title>Athly Fitness — Privacy Policy & Terms of Use</title>
 <style>
   :root {
-    --bg: #0B0D12;
-    --surface: #14171F;
-    --border: #232733;
-    --text: #E8E9ED;
-    --text-dim: #9CA0AD;
-    --accent: #6C8CFF;
+    --bg: #000000;
+    --surface: #0E0E0E;
+    --border: #1E1E1E;
+    --text: #F2F2F2;
+    --text-dim: #9A9A9A;
+    --accent: #FF8A3D;
   }
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.65;
+    overflow-x: hidden;
   }
   .wrap {
     max-width: 760px;
@@ -30,15 +32,6 @@
     margin-bottom: 40px;
     padding-bottom: 32px;
     border-bottom: 1px solid var(--border);
-  }
-  .brand {
-    display: inline-block;
-    font-size: 13px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 14px;
   }
   h1 {
     font-size: 30px;
@@ -67,6 +60,7 @@
     color: var(--text-dim);
     font-size: 15.5px;
     margin: 0 0 14px;
+    word-wrap: break-word;
   }
   ul, ol {
     color: var(--text-dim);
@@ -76,7 +70,7 @@
   }
   li { margin-bottom: 6px; }
   strong { color: var(--text); }
-  a { color: var(--accent); text-decoration: none; }
+  a { color: var(--accent); text-decoration: none; word-break: break-word; }
   a:hover { text-decoration: underline; }
   .section-title {
     font-size: 22px;
@@ -94,7 +88,7 @@
     padding: 18px 20px;
     margin: 16px 0;
   }
-  .contact-box p { margin: 4px 0; color: var(--text); font-size: 15px; }
+  .contact-box p { margin: 4px 0; color: var(--text); font-size: 15px; word-break: break-word; }
   .contact-box p span { color: var(--text-dim); }
   footer {
     margin-top: 56px;
@@ -104,25 +98,36 @@
     font-size: 13px;
     font-style: italic;
   }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .wrap { padding: 36px 18px 72px; }
+    h1 { font-size: 24px; }
+    .section-title { font-size: 19px; margin: 44px 0 16px; padding-top: 24px; }
+    h2 { font-size: 17px; margin: 32px 0 10px; }
+    h3 { font-size: 15px; }
+    p, ul, ol { font-size: 15px; }
+    .meta { font-size: 13px; }
+    .contact-box { padding: 14px 16px; }
+  }
+
+  @media (max-width: 380px) {
+    .wrap { padding: 28px 14px 64px; }
+    h1 { font-size: 21px; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <header>
-    
     <h1>Privacy Policy &amp; Terms of Use</h1>
     <div class="meta">Effective Date: May 31, 2026 &nbsp;·&nbsp; Last Updated: July 02, 2026</div>
   </header>
-
   <div class="section-title">Privacy Policy</div>
-
   <h2>1. Summary</h2>
   <p>Athly Fitness ("the App," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application.</p>
   <p>Athly Fitness is designed as an <strong>offline-first, on-device application</strong>. We do not operate servers that collect, store, or process your personal fitness data. With the exception of third-party advertising services described in Section 5, your health and fitness information stays on your device.</p>
-
   <h2>2. Information We Collect</h2>
-
   <h3>2.1 Data Stored Locally On Your Device</h3>
   <p>When you use Athly Fitness, the following categories of information are created and stored <strong>exclusively on your device</strong> using standard device storage technologies (such as local storage and on-device databases):</p>
   <ul>
@@ -133,7 +138,6 @@
     <li>App settings and preferences</li>
   </ul>
   <p>This information is not transmitted to us. We have no server-side database of your personal fitness information, and we cannot access, view, or recover this data on your behalf.</p>
-
   <h3>2.2 Information Collected by Third-Party Advertising</h3>
   <p>The App displays advertisements served through <strong>Google AdMob</strong>. To deliver and measure ads, AdMob and its partners may automatically collect certain technical information, which can include:</p>
   <ul>
@@ -144,18 +148,15 @@
   </ul>
   <p>This data collection is performed by Google, not by Athly Fitness directly, and is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's Partner Policy</a>. <strong>We do not provide AdMob or any advertising partner with your fitness logs, body metrics, workout history, or any other health-related data.</strong> Advertising data collection is entirely separate from the health data described in Section 2.1.</p>
   <p>You may be able to limit ad personalization through your device's operating system settings (e.g., "Opt out of Ads Personalization" on Android).</p>
-
   <h2>3. How We Use Information</h2>
   <p>Because we do not collect or receive your personal fitness data, we do not use, analyze, sell, rent, or share it for any purpose, including marketing, analytics, or research.</p>
   <p>Data collected by AdMob is used solely to serve and measure advertisements as described in Section 2.2.</p>
-
   <h2>4. Data Sharing &amp; Third Parties</h2>
   <ul>
     <li><strong>We do not sell, rent, or trade your personal fitness data to any third party.</strong></li>
     <li><strong>We do not transmit your health metrics, workout logs, or body data to remote servers, data brokers, or analytics providers.</strong></li>
     <li>The only third party integrated into the App is Google AdMob, for the limited purpose of displaying advertisements as described above.</li>
   </ul>
-
   <h2>5. Data Storage, Security &amp; Retention</h2>
   <p>All fitness and health-related data is stored locally on your device using standard, industry-recognized storage APIs. Because this data never leaves your device:</p>
   <ul>
@@ -163,7 +164,6 @@
     <li>The security of this data depends in part on your device's own security features (passcode, encryption, OS-level protections). We recommend keeping your device secure and your operating system up to date.</li>
     <li>Data persists on your device until you delete it or uninstall the App.</li>
   </ul>
-
   <h2>6. Your Rights &amp; Data Deletion</h2>
   <p>You retain full ownership and control over the data generated within the App. You may permanently delete your locally stored data at any time by:</p>
   <ul>
@@ -171,31 +171,23 @@
     <li>Uninstalling the App from your device.</li>
   </ul>
   <p><strong>This deletion is permanent and irreversible.</strong> Because we maintain no remote backups or cloud copies of your fitness data, once deleted, this information cannot be recovered by you or by us.</p>
-
   <h2>7. Children's Privacy</h2>
   <p>Athly Fitness is not directed at children under the age of 13 (or the applicable minimum age in your jurisdiction), and we do not knowingly design the App to collect personal information from children. If you believe a child has provided personal information through the App, please contact us using the information in Section 11 so we can address the matter.</p>
-
   <h2>8. International Users</h2>
   <p>Athly Fitness is available for use in multiple regions. Because your fitness data is stored locally on your device and not transmitted to us, it generally remains subject to the laws of the country in which your device is located, rather than being transferred internationally. Data collected by AdMob may be subject to Google's own international data handling practices, as described in Google's Privacy Policy.</p>
-
   <h2>9. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time to reflect changes in the App's functionality, legal requirements, or our practices. We will update the "Last Updated" date at the top of this page when changes are made. Continued use of the App after changes take effect constitutes acceptance of the revised policy.</p>
-
   <h2>10. Data Safety Consistency</h2>
   <p>The data handling practices described in this Policy are consistent with the Data Safety disclosures provided for this App on the Google Play Store listing.</p>
-
   <h2>11. Contact Us</h2>
   <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us at:</p>
   <div class="contact-box">
     <p><span>Email:</span> athlyfit.app@gmail.com</p>
     <p><span>Developer:</span> Athly Pro</p>
   </div>
-
   <div class="section-title">Terms of Use</div>
-
   <h2>1. Acceptance of Terms</h2>
   <p>By downloading, installing, or using Athly Fitness, you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.</p>
-
   <h2>2. Health &amp; Medical Disclaimer</h2>
   <p>Athly Fitness is an <strong>informational and self-tracking utility only</strong>. It is not a medical device, and it does not provide medical advice, diagnosis, or treatment.</p>
   <ul>
@@ -203,35 +195,26 @@
     <li>The App is not a substitute for professional medical advice. <strong>Always consult a qualified physician, healthcare provider, or certified fitness professional</strong> before beginning any new exercise program, training protocol, or nutritional regimen — particularly if you have any pre-existing health conditions, injuries, or concerns.</li>
     <li>Calorie, exertion, and performance estimates generated by the App are approximations based on general formulas and self-reported data. They are not clinically validated and may not be accurate for your individual physiology.</li>
   </ul>
-
   <h2>3. Assumption of Risk</h2>
   <p>Physical exercise carries inherent risks, including the possibility of injury. By using Athly Fitness, you acknowledge and voluntarily assume these risks. You agree that you are using the App's guidance, routines, and recommendations at your own discretion and risk, and that you are solely responsible for evaluating your own physical condition and limitations before engaging in any activity suggested or logged within the App.</p>
-
   <h2>4. Limitation of Liability</h2>
   <p>To the maximum extent permitted by applicable law, Athly Fitness and its developers shall not be liable for any indirect, incidental, or consequential damages, or for injuries arising from the use or misuse of the App or reliance on information it provides. Nothing in these Terms is intended to exclude or limit liability that cannot be excluded or limited under applicable law, including liability for gross negligence, willful misconduct, or death or personal injury caused by our negligence where such exclusion would be unlawful.</p>
-
   <h2>5. User Responsibility</h2>
   <p>You are responsible for the accuracy of the information you input into the App (such as body metrics and workout data) and for determining whether any workout, routine, or intensity level is appropriate for your personal health circumstances.</p>
-
   <h2>6. Intellectual Property</h2>
   <p>All content, design elements, branding, and functionality within Athly Fitness are the property of the App's developers and are protected by applicable intellectual property laws, except where third-party or open-source components are used under their own licenses.</p>
-
   <h2>7. Changes to the App or Terms</h2>
   <p>We may modify, update, or discontinue features of the App, and may revise these Terms, at any time. Continued use of the App following any changes constitutes your acceptance of the updated Terms.</p>
-
   <h2>8. Governing Law</h2>
   <p>These Terms shall be governed by the laws of Sri Lanka, without regard to its conflict of law principles.</p>
-
   <h2>9. Contact Us</h2>
   <p>For questions regarding these Terms of Use, please contact:</p>
   <div class="contact-box">
     <p><span>Email:</span> athlyfit.app@gmail.com</p>
   </div>
-
   <footer>
     This document is hosted for use in the Google Play Console listing for Athly Fitness and must remain consistent with the app's Data Safety disclosures.
   </footer>
-
 </div>
 </body>
 </html>
